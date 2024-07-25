@@ -1,4 +1,5 @@
 #include "RobotomyRequestForm.hpp"
+#include <cstdlib>
 
 void RobotomyRequestForm::execute(Bureaucrat const& executor) const
 {

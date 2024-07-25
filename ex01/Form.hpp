@@ -12,13 +12,12 @@ class Form
 		int const _gradeSign;
 		int const _gradeExec;
 	public:
+		void beSigned(Bureaucrat const& bureaucrat);
 		//getters
 		std::string const getName() const;
 		int getGradeSign() const;
 		int getGradeExec() const;
 		bool getSigned() const;
-		//setters
-		void beSigned(Bureaucrat const& bureaucrat);
 		//cannonical
 		Form();
 		Form(std::string name, int gradeSign, int gradeExec);

@@ -8,7 +8,6 @@ Form::Form() : _name("default"), _signed(false), _gradeSign(50), _gradeExec(50)
 
 Form::Form(std::string name, int gradeSign, int gradeExec) : _name(name), _signed(false), _gradeSign(gradeSign), _gradeExec(gradeExec)
 {
-	std::cout << "Form param constructor called!" << std::endl;
 	if (_gradeSign < 1)
 		throw Form::GradeTooHighException();
 	if (_gradeSign > 150)
@@ -17,6 +16,7 @@ Form::Form(std::string name, int gradeSign, int gradeExec) : _name(name), _signe
 		throw Form::GradeTooHighException();
 	if (_gradeExec > 150)
 		throw Form::GradeTooLowException();
+	std::cout << "Form param constructor called!" << std::endl;
 }
 
 Form::~Form()

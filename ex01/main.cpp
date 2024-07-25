@@ -13,8 +13,9 @@ int main()
 	Thorben.signForm(F1);
 
 	std::cout << "Second test:" << std::endl;
+	Bureaucrat	Peter("Peter", 10);
 	try {
-		F1.beSigned(Thorben);
+		F1.beSigned(Peter);
 	} catch (const std::exception& e) {
 		std::cout << e.what() << std::endl;
 	}
